@@ -23,9 +23,9 @@ function stroke(e, touch) {
     if (touch == undefined) {
         touch = 0;
     } else {
-        e.which = 1;
+        e.buttons = 1;
     }
-    if (e.which != 0) {
+    if (e.buttons) {
         ctx.beginPath();
         ctx.lineCap = "round";
         ctx.lineWidth = 5;
