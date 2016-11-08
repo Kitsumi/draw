@@ -54,7 +54,7 @@ document.addEventListener("touchstart", function(e){
 }, false);
 document.addEventListener("touchmove", touchEvt, false);
 document.addEventListener("touchend", touchEvt, false);
-document.querySelector("button").onclick = function(e) {
+function cls(e) {
     ctx.fillStyle = "#111";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
